@@ -10,7 +10,6 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['stepper-overview-example.css']
 })
 export class StepperOverviewExample implements OnInit {
-  isLinear = false;
   firstFormGroup: FormGroup;
   isPresent = false;
 
