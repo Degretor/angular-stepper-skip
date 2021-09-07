@@ -10,18 +10,29 @@
       </div>
     </form>
   </mat-step>
-  <mat-step label="Highlight me!" *ngIf="isPresent">
+  <mat-step label="Choose me!" *ngIf="isPresent">
     <p>Why is "Done" highlighted?</p>
     <div>
       <button mat-button matStepperPrevious>Back</button>
       <button mat-button matStepperNext>Next</button>
     </div>
   </mat-step>
+  <mat-step label="Or me!" *ngIf="isPresent">
+    <p>Why is "Choose me!" highlighted?</p>
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button matStepperNext>Next</button>
+    </div>
+  </mat-step>
   <mat-step label="Done">
-    <p>Wait... why is "Highlight me!" highlighted this time?!
+    <p>Why is "Or me!" highlighted this time?!
     <div>
       <button mat-button matStepperPrevious>Back</button>
       <button mat-button (click)="stepper.reset()">Reset</button>
     </div>
   </mat-step>
 </mat-stepper>
+
+<!-- Copyright 2021 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
